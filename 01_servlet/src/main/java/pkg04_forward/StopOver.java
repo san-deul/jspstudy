@@ -11,7 +11,7 @@ import java.io.IOException;
 public class StopOver extends HttpServlet {
 	private static final long serialVersionUID = 1L;
       
-	//경유지
+	// 경유지
 	
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {

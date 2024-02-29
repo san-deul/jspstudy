@@ -38,7 +38,8 @@ public class Destination1 extends HttpServlet {
      
      String luggage = request.getParameter("luggage");
      
-	   response.sendRedirect("/servlet/destination2?luggage="+URLEncoder.encode(luggage,"UTF-8")); // 주소에 한글포함되어있어 중간에 막힘,영어로하면됨
+	   response.sendRedirect("/servlet/destination2?luggage="+URLEncoder.encode(luggage,"UTF-8")); 
+	   // 주소에 한글포함되어있어 중간에 막힘,영어로하면됨
 	   
 	   
 
