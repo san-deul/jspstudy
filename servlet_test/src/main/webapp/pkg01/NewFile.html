@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+<form id="frm"
+      method="POST"
+      action="/servlet/request">
+  <div>
+    <label for="id">아이디</label>
+    <input type="text" name="id" id="id">
+  </div>
+  <div>
+    <lable for="password">비밀번호</lable>
+    <input type="password" name="passwoard" id="password">
+  </div>
+  <div>
+    <lable for="password2">비밀번호확인</lable>
+    <input type="password" name="password2" id="password2">
+  </div>
+  <div>
+     <label for="name">이름</label>
+     <input type="text" name="name" id="name">
+  </div>
+  <div>
+    <label for="birth">생년월일</label>
+    <input type="text" name="birth1" id="birth1">
+    <select>
+      <option value="1">1월</option>
+      <option value="2">2월</option>
+      <option value="3">3월</option>
+      <option value="4">4월</option>
+      <option value="5">5월</option>
+      <option value="6">6월</option>
+      <option value="7">7월</option>
+      <option value="8">8월</option>
+      <option value="9">9월</option>
+      <option value="10">10월</option>
+      <option value="11">11월</option>
+      <option value="12">12월</option>
+    </select>
+    <input type="number" name="birth2" id="birth2">
+  </div>
+  <div>
+    <label for="gender">성별</label>
+    <select>
+      <option value="남">남</option>
+      <option value="여">여</option>
+    </select>
+  </div>
+  <div>
+    <label for="email">본인 확인 이메일(선택)</label>
+    <input type="text" name="email" id="email">
+  </div>
+  <div>
+    <label for="phone">휴대전화</label>
+    <select>
+      <option vlaue="대한민국 +82"></option>
+    </select>
+    <input tyoe="text" name="number" id="number">
+  </div>
+  
+  <button type="submit">가입하기</button>
+  
+</form>
+
+  <script>
+  document.getElementById('frm').addEventListener('submit',(evt)=>{
+    let id = document.getElementById('id');
+    if(id.value === ''){
+      alert('아이디는 필수입니다.');
+      id.focus();
+      evt.preventDefault();  
+      return;                 
+    }
+    let password = document.getElementById('password');
+    let password2 = document.getElementById('password2');
+    if(password.value===''){
+    	alert('비밀번호를 확인하세요');
+      password.focus();
+      evt.preventDefault();
+      return;
+    }
+    if(!(password.value === password2.value)){
+    	alert('비밀번호를 확인하세요');
+    	password.focus();
+    	evt.preventDefault();
+    	return;
+    }
+    
+    
+  })
+  
+
+  </script>
+
+
+</body>
+</html>
