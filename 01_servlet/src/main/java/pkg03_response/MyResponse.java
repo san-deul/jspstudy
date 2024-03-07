@@ -22,7 +22,8 @@ public class MyResponse extends HttpServlet {
 	  response.setContentType("text/html; charset=UTF-8");
 	  
 	  // 2. 응답 출력 스트림 알아내기(문자 출력 스트림)
-	  PrintWriter out = response.getWriter(); //doGet이 (thorws)예외회피중이라, 스트림인데도 try..catch안해도됨,근데 나중에 자바에서는 해야함
+	  PrintWriter out = response.getWriter(); 
+	  //doGet이 (thorws)예외회피중이라, 스트림인데도 try..catch안해도됨,근데 나중에 자바에서는 해야함
 	  
 	  // 3. 응답 만들기
 	  out.println("<!DOCTYPE html>");

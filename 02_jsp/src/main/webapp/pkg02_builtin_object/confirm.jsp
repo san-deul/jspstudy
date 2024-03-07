@@ -10,7 +10,6 @@
 <body>
 
   <%
-  
     // 업로드 된 파일 목록 가져오기
     String uploadPath = application.getRealPath("upload");  //※ getRealPath 는 쓰지말것
     File uploadDir = new File(uploadPath);

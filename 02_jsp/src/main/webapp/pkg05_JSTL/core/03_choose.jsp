@@ -32,7 +32,6 @@
     <c:when test="${age >= 20}">
       <c:set var="result" value="성인"/>
     </c:when>
-    
     <c:otherwise>
       <c:set var="result" value="미성년자"/>
     </c:otherwise>

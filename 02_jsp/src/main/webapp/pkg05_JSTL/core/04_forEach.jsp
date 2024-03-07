@@ -34,7 +34,7 @@
     </c:forEach>
     
 <%-- 향상 for 문 (배열) --%>
-    <% pageContext.setAttribute("seasons", new String[]{"spring","summer","autumn","winter"}); %>
+    <% pageContext.setAttribute("seasons", new String[]{"spring","summer","autumn","winter"});%>
     <c:forEach var="season" items="${seasons}" varStatus="vs">
       <div>${season} / ${vs.index} / ${vs.count}</div>
     </c:forEach>    
@@ -42,7 +42,7 @@
     <hr>
     
 <%-- 향상 for 문 (리스트) --%>
-    <% pageContext.setAttribute("hobbies", Arrays.asList("travel","cook","fitness","game")); %>
+    <% pageContext.setAttribute("hobbies", Arrays.asList("travel","cook","fitness","game"));%>
     <c:forEach var="hobby" items="${hobbies}" varStatus="vs">
       <div>${hobby} / ${vs.index} / ${vs.count}</div>
     </c:forEach>
