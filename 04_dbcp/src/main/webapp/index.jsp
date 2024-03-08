@@ -12,5 +12,9 @@
 </head>
 <body>
 
+  <div>
+    <a href="${contextPath}/board/list.brd">게시판</a>
+  </div>
+
 </body>
 </html>
